@@ -7,6 +7,7 @@ one for the details. The foldable layout take care of the folding animation betw
  
 In the demo the foldable layout is use in a RecyclerView, to show that it can manage well its size even during animation.
 
+[Demo]: https://raw.githubusercontent.com/worldline/FoldableLayout/dev/screenshots/demo.gif
 
 Is a library available ?
 ========================
