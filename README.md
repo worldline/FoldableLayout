@@ -1,11 +1,11 @@
 Foldable Layout
 =================
 This code is a showcase of a foldable animation I created for Worldline. The code is fully written
-with java APIs from the Android SDK, without the use of any external library. This code is a demo and lot a library.
+with java APIs from the Android SDK, without the use of any external library. This code is a demo and not a library.
 The foldable layout is a layout (strictly a RelativeLayout), which can have two child layouts, one for the cover, and
-one for the details. The foldable layout take care of the folding animation between those two layouts.
+one for the details. The foldable layout takes care of the folding animation between those two layouts.
  
-In the demo the foldable layout is use in a RecyclerView, to show that it can manage well its size even during animation.
+In the demo the foldable layout is used in a RecyclerView, to show that it can manage well its size even during animation.
 
 ![](https://raw.githubusercontent.com/worldline/FoldableLayout/dev/screenshots/demo.gif)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=XOAcNW82dl8
@@ -16,7 +16,7 @@ Is a library available ?
 ========================
 This code will not become a library. This code is too much specific (even if it is working from a separate gradle module).
 This is a showcase, and if you want to use it, I greatly recommend you to understand the code from the `foldablelayout` and adapt it
-to you your usage.
+to your usage.
 
 License
 =======
