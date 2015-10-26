@@ -15,6 +15,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 [Update] Is a library available ?
 =================================
 [Update] Since a lot of peope seems to endorse this code, I may consider releasing the `foldablelayout` on Sonatype as is.
+
 However, this code is very much specific (even if it is working from a separate gradle module).
 This is more a showcase, and if you want to use it, I greatly recommend you to understand the code from the `foldablelayout` and adapt it
 to your usage.
