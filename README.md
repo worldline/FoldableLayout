@@ -20,6 +20,10 @@ However, this code is very much specific (even if it is working from a separate 
 This is more a showcase, and if you want to use it, I greatly recommend you to understand the code from the `foldablelayout` and adapt it
 to your usage.
 
+Under the hood
+==============
+Work in progress.
+
 License
 =======
 
