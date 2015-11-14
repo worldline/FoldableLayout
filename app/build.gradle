@@ -20,7 +20,10 @@ android {
 }
 
 dependencies {
-    compile project (":foldablelayout")
+    //compile project (":foldablelayout")
+    compile ('com.vincentbrison.openlibraries.android:foldablelayout:0.0.1-SNAPSHOT@aar') {
+        transitive = true
+    }
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'

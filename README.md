@@ -4,25 +4,40 @@ This code is a showcase of a foldable animation I created for Worldline. The cod
 with java APIs from the Android SDK, without the use of any external library. This code is a demo and not a library.
 The foldable layout is a layout (strictly a RelativeLayout), which can have two child layouts, one for the cover, and
 one for the details. The foldable layout takes care of the folding animation between those two layouts.
- 
+
 In the demo the foldable layout is used in a RecyclerView, to show that it can manage well its size even during animation.
 
 ![](https://raw.githubusercontent.com/worldline/FoldableLayout/dev/screenshots/demo.gif)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=XOAcNW82dl8
-" target="_blank"><img src="http://img.youtube.com/vi/XOAcNW82dl8/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/XOAcNW82dl8/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-[Update] Is a library available ?
-=================================
-[Update] Since a lot of people seems to endorse this code, I am considering to release the `foldablelayout` on Sonatype as is.
-
-However, this code is very much specific (even if it is working from a separate gradle module).
-This is more a showcase, and if you want to use it, I greatly recommend you to understand the code from the `foldablelayout` and adapt it
-to your usage.
 
 Under the hood
 ==============
 Work in progress.
+
+Is a library available ?
+========================
+The library is available as is. No support guarantied. This is more a showcase, and if you want to use it, I greatly recommend you to understand the code from the `foldablelayout` and adapt it
+to your usage.
+
+ - Add to your repositories the following url :
+
+   ```gradle
+   maven {
+       url 'https://oss.sonatype.org/content/groups/public/'
+   }
+   ```
+
+   and to your module gradle file :
+
+   ```gradle   
+     dependencies {
+       compile 'com.vincentbrison.openlibraries.android:foldablelayout:0.0.1@aar'
+       }
+     }
+   ```   
 
 License
 =======

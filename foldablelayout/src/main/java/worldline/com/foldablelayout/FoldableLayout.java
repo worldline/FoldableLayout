@@ -40,7 +40,8 @@ import android.widget.RelativeLayout;
 
 
 /**
- * Layout which allow a foldable animation between two other layouts.
+ * Layout which allow a foldable animation between two other layouts. The only limitation of this
+ * layout is than the big view should be exactly twice bigger in height than the small view {@link #setupViews(int, int, int, Context)}.
  */
 public class FoldableLayout extends RelativeLayout {
 
@@ -161,11 +162,12 @@ public class FoldableLayout extends RelativeLayout {
     }
 
     /**
-     * Init the two views which will compose the foldable sides.
+     * Init the two views which will compose the foldable sides. To ensure nice animations,
+     * the big view height should be exactly twice bigger than the small view height.
      *
      * @param coverLayoutId  is the "small" view which is used as the cover.
      * @param detailLayoutId is the "big" view which is used as the detail.
-     * @param coverHeight is the hight of the cover view.
+     * @param coverHeight is the height of the cover view.
      * @param context        is a valid context.
      */
     public void setupViews(@LayoutRes int coverLayoutId, @LayoutRes int detailLayoutId, @DimenRes int coverHeight, Context context) {
