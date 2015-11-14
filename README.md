@@ -26,17 +26,16 @@ to your usage.
 
    ```gradle
    maven {
-       url 'https://oss.sonatype.org/content/groups/public/'
+     url 'https://oss.sonatype.org/content/groups/public/'
    }
    ```
 
-   and to your module gradle file :
+ - And to your module gradle file :
 
    ```gradle   
-     dependencies {
-       compile 'com.vincentbrison.openlibraries.android:foldablelayout:0.0.1@aar'
-       }
-     }
+   dependencies {
+     compile 'com.vincentbrison.openlibraries.android:foldablelayout:0.0.1@aar'
+   }
    ```   
 
 License
