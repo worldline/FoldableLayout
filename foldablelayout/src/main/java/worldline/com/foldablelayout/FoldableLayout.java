@@ -189,8 +189,16 @@ public class FoldableLayout extends RelativeLayout {
     }
 
     private void clearImageView(ImageView imageView) {
-        imageView.setBackground(null);
+        setImageBackground(imageView, null);
         imageView.setImageDrawable(null);
+    }
+
+    private void setImageBackground(ImageView imageView, Drawable drawable) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            imageView.setBackground(drawable);
+        } else {
+            imageView.setBackgroundDrawable(drawable);
+        }
     }
 
     /**
@@ -277,8 +285,8 @@ public class FoldableLayout extends RelativeLayout {
                     mContentLayout.setRotationX(180);
                     mViewGroupDetail.setVisibility(GONE);
                     mImageViewAbove.setImageDrawable(belowShadow);
-                    mImageViewAbove.setBackground(new BitmapDrawable(getResources(), rotatedAboveBitmap));
-                    mImageViewBelow.setBackground(new BitmapDrawable(getResources(), mDetailTopBitmap));
+                    setImageBackground(mImageViewAbove, new BitmapDrawable(getResources(), rotatedAboveBitmap));
+                    setImageBackground(mImageViewBelow, new BitmapDrawable(getResources(), mDetailTopBitmap));
                     mImageViewBelow.setImageDrawable(aboveShadow);
                 }
 
@@ -340,7 +348,7 @@ public class FoldableLayout extends RelativeLayout {
                     if (animation.getAnimatedFraction() >= 0.5 && !mReplaceDone) {
                         mReplaceDone = true;
                         mViewGroupCover.setVisibility(GONE);
-                        mImageViewAbove.setBackground(new BitmapDrawable(getResources(), rotatedAboveBitmap));
+                        setImageBackground(mImageViewAbove, new BitmapDrawable(getResources(), rotatedAboveBitmap));
                         mImageViewAbove.setImageDrawable(aboveShadow);
                     }
                     mContentLayout.setRotationX((Float) animation.getAnimatedValue());
@@ -358,7 +366,7 @@ public class FoldableLayout extends RelativeLayout {
                 public void onAnimationStart(Animator animation) {
                     mFoldListener.onUnFoldStart();
                     mIsAnimating = true;
-                    mImageViewBelow.setBackground(new BitmapDrawable(getResources(), mDetailTopBitmap));
+                    setImageBackground(mImageViewBelow, new BitmapDrawable(getResources(), mDetailTopBitmap));
                     mImageViewBelow.setImageDrawable(belowShadow);
                 }
 
