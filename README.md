@@ -25,8 +25,8 @@ to your usage.
  - Add to your repositories the following url :
 
    ```gradle
-   maven {
-     url 'https://oss.sonatype.org/content/groups/public/'
+   repositories {
+     mavenCentral()
    }
    ```
 
