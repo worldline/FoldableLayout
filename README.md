@@ -22,7 +22,7 @@ Is a library available ?
 The library is available as is. No support guarantied. This is more a showcase, and if you want to use it, I greatly recommend you to understand the code from the `foldablelayout` and adapt it
 to your usage.
 
- - Add to your repositories the following url :
+ - Ensure you can pull artifacts from Maven Central :
 
    ```gradle
    repositories {
@@ -30,7 +30,7 @@ to your usage.
    }
    ```
 
- - And to your module gradle file :
+ - And add to your module gradle file :
 
    ```gradle   
    dependencies {
