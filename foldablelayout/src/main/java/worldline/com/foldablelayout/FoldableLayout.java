@@ -46,6 +46,7 @@ import android.widget.RelativeLayout;
 public class FoldableLayout extends RelativeLayout {
 
     private static final int ANIMATION_DURATION = 600;
+    private static final int CAMERA_Z_DISTANCE_DIP = 4000;
 
     protected RelativeLayout mContentLayout;
     protected ImageView mImageViewBelow;
@@ -325,6 +326,7 @@ public class FoldableLayout extends RelativeLayout {
 
             mContentLayout.setPivotY(mCoverHeight);
             mContentLayout.setPivotX(mViewGroupCover.getWidth() / 2);
+            mContentLayout.setCameraDistance(CAMERA_Z_DISTANCE_DIP * getResources().getDisplayMetrics().density);
 
             final int initialHeight = mCoverHeight;
 
