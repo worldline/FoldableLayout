@@ -34,7 +34,7 @@ to your usage.
 
    ```gradle   
    dependencies {
-     compile 'com.vincentbrison.openlibraries.android:foldablelayout:0.0.1@aar'
+     implementation 'com.vincentbrison.openlibraries.android:foldablelayout:0.0.1@aar'
    }
    ```   
 
